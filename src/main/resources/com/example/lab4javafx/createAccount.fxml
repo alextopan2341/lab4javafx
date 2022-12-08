@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" focusTraversable="true" prefHeight="554.0" prefWidth="515.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4javafx.controllers.CreateAccount">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TextField fx:id="prenume" mouseTransparent="true" text="Prenume">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <effect>
+         <Glow />
+      </effect></TextField>
+    <TextField fx:id="nume" mouseTransparent="true" text="Nume">
+      <effect>
+         <Glow />
+      </effect></TextField>
+    <TextField fx:id="email" mouseTransparent="true" text="Email">
+      <effect>
+         <Glow />
+      </effect></TextField>
+    <PasswordField fx:id="parola" text="Parola">
+      <effect>
+         <Glow />
+      </effect></PasswordField>
+    <Label fx:id="eroare" />
+    <Button mnemonicParsing="false" onAction="#createAccount" text="CreateAccount" />
+</VBox>
